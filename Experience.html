@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Background Color</title>
+    <style>
+        
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .dynamic-bg {
+            width: 100%;
+            height: 100%;
+            
+            align-items: center;
+            justify-content: center;
+            color: #687278;
+            
+            transition: background-color 0.3s ease;
+        }
+     
+        .button {
+      border: transparent;
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.736);
+      text-align: center;
+      text-decoration: underline;
+      display: inline-block;
+      font-size: 22px;
+      margin: 4px 2px;
+      cursor: pointer;
+      height: 50px;
+      width: 200px;
+      border-radius: 12px;
+      opacity: 0.6;
+    }
+
+    .top-bar {
+      
+      font-family: 'Gill Sans';
+
+      flex-direction: row;
+      display: flex;
+      position: absolute;
+      height: 75;
+      width: 50%;
+      left: 640px;
+      top: 5px;
+
+    }
+
+        .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background-color: white; */
+}
+
+/* Timeline card styling with black text */
+.timeline-card {
+    background-color: #c6cec5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 90%; height: 90%;
+    padding: 20px;
+    color: black; /* Set the text color to black */
+
+}
+
+.timeline-date {
+  font-size: 16px;
+  font-weight:bolder;
+  margin-bottom: 10px;
+  
+}
+
+.timeline-content {
+  margin-bottom: 10px;
+  
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+</style>
+</head>
+
+
+<body class="dynamic-bg" id="dynamic-bg">
+    <!-- NAVIGATION -->
+<a href="index.html" style=" position: absolute;top: 10px;left:10px; flex-direction: column; display: flex;">
+    <img src="asset/temp.png" style="height: 35px; width: 45px;  " alt="Back" />
+    <Text style=" color: #000; text-decoration:none; opacity: 0.6;">Home</Text>
+  </a>
+  <div class="top-bar">
+    <a href="about.html"> <button class="button">About</button> </a>
+    <a href="PROJECTS.html"> <button class="button">Projects</button></a>
+    <a href="Experience.html"> <button class="button">Experience</button></a>
+    <a href="Education.html"><button class="button">Education</button></a>
+  </div>
+  <br/> 
+  <!-- NAVIGATION -->
+    
+    <h1 id="headerText" style="color: #c6cec5; font-size: 70px; text-align: center; margin: 45px; opacity: 100; font-weight: bolder;"> Byte by Byte<span id="dot1" style="visibility: hidden;">.</span><span id="dot2" style="visibility: hidden;">.</span><span id="dot3" style="visibility: hidden;">.</span><span id="dot4" style="visibility: hidden;">.</span></h1>
+    <blockquote style="color: #625e6d; font-size: 30px;text-align: center;">  <p>    </p> Journey Through The World of Tech</blockquote>
+        
+    <div class="dynamic-bg" id="dynamic-bg">
+        <!-- Your timeline content here -->
+
+        <div class="timeline">
+           
+            
+            <!-- ADD EXPErience details  -->
+            <div class="timeline-card">
+                <div class="timeline-date">June 2022 - June 2023</div>
+                <div class="timeline-content">
+                    <h3>Data Science Fellow | CUNY Tech Prep</h3>
+
+                    <div style="font-size: 18px;">
+                        <ul>
+                            <li>Participated in a selective fellowship program focused on developing technical skills in data science, including coursework in statistical analysis, machine learning, and data visualization.</li>
+                            <li>Collaborated in a capstone project displaying proficiency in data analysis and visualization using Python.</li>
+                            <li>Conducted in-depth research and analysis of various datasets to derive meaningful insights and patterns.</li>
+                            <li>Utilized Python libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.</li>
+                            <li>Presented findings and recommendations to a panel of industry experts and stakeholders.</li>
+                            <li>Worked in a team environment, engaging in regular code reviews and collaborative problem-solving.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <div class="timeline-date">Summer 2022</div>
+                <div class="timeline-content">
+                    <h3>Intern | Research Foundation of CUNY with Crown Doctors and Digital Factory Inc</h3>
+                    <ul>
+                        <li>Built a cross-platform app using React Native with Expo-CLI, Google Firebase, and the Google Places API.</li>
+                        <li>Led a team of 10 app developers; organized and facilitated weekly team meetings and presented regular progress reports to ensure the project remained on track and on schedule.</li>
+                        <li>The goal was to aid their ongoing program to spread awareness about alopecia.</li>
+                        <li>Designed and implemented intuitive user interfaces to enhance the user experience and increase user engagement.</li>
+                        <li>Collaborated with the design team to create visually appealing app layouts and graphics.</li>
+                        <li>Conducted thorough testing and debugging to identify and resolve any issues or bugs.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <div class="timeline-date">Jan 2022 - May 2022</div>
+                <div class="timeline-content">
+                    <h3>Software Development Intern | New York City Department of Transportation</h3>
+                    <p>
+                        Utilized Unity with C# to develop an educational app that simulates the experience of driving a truck in a lifelike version of Manhattan, while educating users about obstacles and the challenges of operating a large vehicle.
+                    </p>
+                    <p>
+                        Incorporated realistic physics, including gravity and resistance, to enhance the immersive experience.
+                    </p>
+                    <p>
+                        Planned and delivered the project scope and objectives, with the goal of creating an interactive and engaging educational tool to promote a culture of safety which was integrated into the DOT’s Truck Eye View Program.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <div class="timeline-date">June 2020 - May 2021</div>
+                <div class="timeline-content">
+                    <h3>Instructor: Object Oriented Programming | NASA MAA Program</h3>
+                    <p>
+                        Instructed 80 students on Object Oriented Programming with Python, utilizing interactive visual aids, including Scratch, to introduce key concepts such as objects and iterators.
+                    </p>
+                    <p>
+                        Created slides and coding trivia. Tutored students in one-on-one sessions helping them grasp the fundamentals of programming that can be applied across various languages.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ... -->
+
+        </div>
+    </div>
+
+    <script>
+        var colors = ['#dddddd', '#F2F2F2', '#CCCCCC', '#9f9f9f']; // Add your desired colors here
+        var currentColorIndex = 0;
+
+        function changeBackgroundColor() {
+            var bgElement = document.getElementById('dynamic-bg');
+            bgElement.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }
+
+        // Change background color every 2 seconds
+        setInterval(changeBackgroundColor, 2000);
+
+       
+        function showAndHideDotsLoop() {
+            // Get the dot elements
+            var dots = [
+                document.getElementById('dot1'),
+                document.getElementById('dot2'),
+                document.getElementById('dot3'),
+                document.getElementById('dot4')
+            ];
+
+            // Function to show the dots one by one
+            function showDots() {
+                var currentIndex = 0;
+                var showInterval = setInterval(function() {
+                    if (currentIndex >= dots.length) {
+                        clearInterval(showInterval); // Stop the show interval when all dots are shown
+                        // Start the hide interval to make the dots disappear one by one
+                        var hideInterval = setInterval(function() {
+                            currentIndex--;
+                            if (currentIndex < 0) {
+                                clearInterval(hideInterval); // Stop the hide interval when all dots are hidden
+                                showDots(); // Start the loop again
+                                return;
+                            }
+                            // Hide the dot at the current index
+                            dots[currentIndex].style.visibility = 'hidden';
+                        }, 700); // Interval between hiding each dot in milliseconds (200ms in this example)
+                        
+                        return;
+                    }
+                    // Show the dot at the current index
+                    dots[currentIndex].style.visibility = 'visible';
+                    currentIndex++;
+                }, 700); // Interval between showing each dot in milliseconds (200ms in this example)
+            }
+
+            showDots(); // Start the loop to show and hide the dots
+        }
+
+        // Call the showAndHideDotsLoop function after a short delay to start the animation
+        setTimeout(showAndHideDotsLoop, 1000);
+
+    </script>
+</body>
+</html>

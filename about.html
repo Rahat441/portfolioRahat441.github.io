@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" class="text/css" href="style.css">
+  
+  
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            align-self: stretch;
+        }
+
+        .top-bar {
+            font-family: 'Gill Sans';
+            flex-direction: row;
+            display: flex;
+            position: absolute;
+            height: 75;
+            width: 50%;
+            left: 650px;
+            top: 15px;
+        }
+
+        .button {
+            border: transparent;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 22px;
+            margin: 4px 2px;
+            cursor: pointer;
+            height: 50px;
+            width: 200px;
+            border-radius: 12px;
+            opacity: 0.6;
+        }
+
+        .timeline-event {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeline-event:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        .event-content {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .event-title {
+            font-size: 34px;
+            font-weight: bold;
+            margin: 20px;
+            padding: 45px;
+        }
+
+        .event-description {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .event:hover {
+            cursor:pointer;
+            }
+
+       .transition-cursor {
+            transition: cursor 0.0001ms linear;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navigation BAR -->
+    <!-- NAVIGATION -->
+    <a href="index.html" style=" position: absolute;top: 10px;left:10px; flex-direction: column; display: flex;">
+        <img src="asset/temp.png" style="height: 35px; width: 45px;  " alt="Back" />
+        <Text style=" color: #000000; text-decoration:none; opacity: 0.6;">Home</Text>
+      </a>
+      <div class="top-bar">
+        <a href="about.html"> <button class="button">About</button> </a>
+        <a href="PROJECTS.html"> <button class="button">Projects</button></a>
+        <a href="Experience.html"> <button class="button">Experience</button></a>
+        <a href="Education.html"><button class="button">Education</button></a>
+        
+      </div>
+      <!-- NAVIGATION -->
+
+    <div class="timeline">
+        <!-- 
+
+
+
+
+
+  -->
+        
+        <div class="timeline-event" onmouseover="changeCursor(1)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">From Bangladesh to the US </h2>
+                <p class="event-description"> A Journey of Exploration
+
+                    Originating from the vibrant land of Bangladesh, I embarked on an adventure that led me to the United States five years ago. Leaving behind familiar landscapes, I embraced the opportunity to immerse myself in a new culture, pursue education, and explore new horizons. This journey has been one of growth, discovery, and forging connections with diverse communities.
+                    </p>
+            </div>
+        </div>
+        <div class="timeline-event" onmouseover="changeCursor(2)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">Leadership and Academics: Striving for Excellence</h2>
+                <p class="event-description">
+
+                    During my time in high school, I was honored to be elected as the President of the Student Government. In this role, I learned the value of effective communication, collaboration, and advocacy. Working alongside my peers, I championed initiatives that fostered a sense of community and addressed important issues.
+                    
+                    Academics have always been a strong suit for me, and my dedication to learning was recognized when I proudly held the position of Salutatorian at my school. The pursuit of knowledge is a lifelong passion, and I continue to expand my horizons through continuous learning.</p>
+            </div>
+        </div>
+        <div class="timeline-event" onmouseover="changeCursor(3)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">Passions and Talents: A Multifaceted Individual</h2>
+                <p class="event-description">
+
+                    Beyond the realm of academia, I am a multifaceted individual with a myriad of passions and talents. Soccer is more than just a game for me; it's a passion that brings joy and camaraderie. When I step onto the soccer field, I feel a rush of excitement and a sense of belonging.
+                    
+                    Music is another love that fills my life with creativity and expression. As a musician, I enjoy the process of creating melodies that resonate with the soul and convey emotions that words often fail to express.
+                    </p>
+            </div>
+        </div>
+        <div class="timeline-event" onmouseover="changeCursor(4)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">Tech Enthusiast and Game Developer</h2>
+                <p class="event-description">
+
+                    With a degree in Computer Science, technology has become the canvas for my creativity. I love exploring the world of coding, algorithms, and data science. Developing games is one of my favorite ways to apply my technical skills and create immersive experiences for players. Through game development, I bring stories to life, engage players, and challenge their minds.
+                    </p>
+            </div>
+        </div>
+        <div class="timeline-event" onmouseover="changeCursor(5)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">Making a Difference: Impacting Lives</h2>
+                <p class="event-description">
+
+                    While my technical skills and passions drive me, what truly fulfills me is the opportunity to help others. Whether it's lending a hand to a classmate in need, volunteering for community initiatives, or mentoring aspiring developers, making a positive impact on people's lives is a core value I hold dear.
+                    </p>
+            </div>
+        </div>
+        <div class="timeline-event" onmouseover="changeCursor(5)" onmouseout="resetCursor()">
+            <div class="event-content">
+                <h2 class="event-title">A Journey of Growth and Exploration
+                </h2>
+                <p class="event-description">
+                    
+                    My story is one of growth, exploration, and a pursuit of excellence in every aspect of life. I invite you to join me in this exciting adventure as I continue to learn, create, and make a difference in the world.
+                    
+                    Thank you for taking the time to get to know me better. I hope my experiences and stories inspire you to embrace your own journey and pursue your passions with vigor and determination.
+                           </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeCursor(index) {
+            document.body.classList.add('transition-cursor');
+            document.body.style.cursor = 'url("cursor' + index + '.png"), auto';
+            console.log('Hovering over:', index);
+        }
+
+        function resetCursor() {
+            document.body.classList.remove('transition-cursor');
+            document.body.style.cursor = 'auto';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

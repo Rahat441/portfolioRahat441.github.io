@@ -1,0 +1,128 @@
+
+/* FOR ALL PAGES  */
+
+.bg_div{ /* To style body and background image   */
+  position: relative;
+  height: 100%; width: 100%;
+  background-size:cover;
+  background-image: url('./asset/BG.jpg');
+  
+    
+}
+.top-bar{    /* To stule Top menu  */
+    
+    font-family: 'Gill Sans';
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    height: 75;width: 50%;
+    left: 650;  
+    top: 15; 
+    /* background-color: aqua; */
+   
+} 
+.button{    /* All button styles  */
+ border:transparent;
+  background-color:transparent;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration:underline;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 50; width: 200;
+  border-radius: 12px;
+  opacity: 0.6;
+  
+}
+
+.back{
+    flex-direction: column;
+    display: flex;
+    padding: 0%;
+    align-items: center;
+}
+/* FOR ALL PAGES  */
+
+
+/* FOR INDEX  */
+
+/* FOR INDEX CHANGING TEXT  */
+/*
+
+*/
+
+/* FOR INDEX CHANGING TEXT  */
+.Footer{
+    
+    margin: 2%;
+    justify-content: center;
+    padding-left: 5%; padding-right:  5%;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    top: 750; left: 50;
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+}
+.body-text{
+   
+    position: relative;
+    top: 125; left:80;
+    height: 50%; width: 50%;
+    opacity: .8;
+   
+
+}
+
+.left-top{
+    padding: 1;
+    font-family: 'Trebuchet MS';
+    font-size: 52;
+    font-weight: 700;
+    position: absolute;  
+    top:15;
+    left: 160;
+    color:#000000;
+    opacity: .6;
+    text-decoration:rgb(111, 72, 0);
+    text-decoration-line: underline;
+    
+}
+
+.logo{
+    padding: 10;
+    position: absolute;
+    height: 150; width: 150;
+    top: 15;
+    color: #000;
+    opacity: .9;
+}
+/* about */
+.about-text{
+    position: absolute;
+   
+    
+    align-content: space-between;
+    left: 530;
+    top: 150;
+    text-decoration: wavy;
+}
+
+
+/* FOR PROJECT  */ 
+.Project-text{
+    align-content: center;
+    position: absolute;
+    top: 100px;
+
+}
+
+.bodyImg{
+    height: 40%; width: 60%;
+    opacity: .8;
+    border-color: blanchedalmond;
+    
+}

@@ -1,14 +1,27 @@
 
 /* FOR ALL PAGES  */
-
-.bg_div{ /* To style body and background image   */
-  position: relative;
-  height: 100%; width: 100%;
-  background-size:cover;
-  background-image: url('./asset/BG.jpg');
-  
-    
+/* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+.bg_div{ 
+    /* To style body and background image   */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%; width: 100%;
+    background-size:cover;
+    background-image: url('./asset/BG.jpg');
+  }
+
 .top-bar{    /* To stule Top menu  */
     
     font-family: 'Gill Sans';
@@ -45,32 +58,77 @@
 }
 /* FOR ALL PAGES  */
 
-
-/* FOR INDEX  */
-
 /* FOR INDEX CHANGING TEXT  */
-/*
 
-*/
 
-/* FOR INDEX CHANGING TEXT  */
-.Footer{
-    
-    margin: 2%;
-    justify-content: center;
-    padding-left: 5%; padding-right:  5%;
-    flex-direction: row;
-    display: flex;
+/* styles.css */
+/* styles.css */
+
+.Footer {
     position: absolute;
-    top: 750; left: 50;
-    opacity: .9;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Use 'space-around' to distribute icons evenly */
+    align-items: center;
+    bottom: 10;
+    /* height: 100vh;  */
+    width: 100vh; 
+    /* background-color: #000; */
 }
+
+.icon-container {
+    
+    opacity: 0.9;
+    flex: 1;
+    margin: 0 150px; /* Increase the margin to add more space between icons */
+}
+
+.linkedin-icon {
+    height: 60px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.facebook-icon {
+    height: 60px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.instagram-icon {
+    height: 70px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.github-icon {
+    height: 70px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+/* Hover effect */
+.linkedin-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.github-icon:hover {
+    transform: scale(1.5);
+}
+
+
+  /*  */
 .body-text{
    
     position: relative;
-    top: 125; left:80;
+    top: 255; left:-200;
     height: 50%; width: 50%;
     opacity: .8;
    

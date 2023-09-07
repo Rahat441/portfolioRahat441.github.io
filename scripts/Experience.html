@@ -1,20 +1,35 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dynamic Background Color</title>
-    <style>
-        
-        .body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-           
-        }
-
-        .dynamic-bg {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+<style>
+body {
+    /* height: 100%; width: 100%; */
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, sans-serif;}
+/* Responsive styles */
+   /* Responsive styles */
+@media (max-width: 600px) {
+    .top-bar {
+        justify-content: center; /* Center align buttons for smaller screens */
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align vertically */
+    }
+    
+    .button {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px 10px; /* Adjust padding for smaller buttons */
+        margin: 5px 0; /* Add margin between stacked buttons */
+    }
+}
+.dynamic-bg {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             
             align-items: center;
             justify-content: center;
@@ -23,41 +38,11 @@
             transition: background-color 0.3s ease;
         }
      
-        .button {
-      border: transparent;
-      background-color: transparent;
-      color: rgba(0, 0, 0, 0.736);
-      text-align: center;
-      text-decoration: underline;
-      display: inline-block;
-      font-size: 22px;
-      margin: 4px 2px;
-      cursor: pointer;
-      height: 50px;
-      width: 200px;
-      border-radius: 12px;
-      opacity: 0.6;
-    }
-
-    .top-bar {
-      
-      font-family: 'Gill Sans';
-
-      flex-direction: row;
-      display: flex;
-      position: absolute;
-      height: 75;
-      width: 50%;
-      left: 640px;
-      top: 5px;
-
-    }
-
-        .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     /* background-color: white; */
 }
 
@@ -82,11 +67,11 @@
 
 .timeline-content {
   margin-bottom: 10px;
-  
+  font-family: Arial, sans-serif;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 25px;
   text-align: center;
   font-weight: 500;
@@ -95,6 +80,7 @@ h3 {
 
 p {
   line-height: 1.5;
+  padding: 5px;
 }
 
 a {
@@ -103,28 +89,56 @@ a {
   text-decoration: none;
   color: #007BFF;
 }
+/* NAV STYLE  */
+    /* .nav-bar {
+        overflow: visible; 
+    .button {
+        display: block;
+        color: rgba(0, 0, 0, 0.736);
+        text-align: center;
+        text-decoration: none;
+        font-size: 22px; 
+        cursor: pointer;
+        padding: 14px 20px; 
+        border-radius: 12px;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+        margin: 0 10px; 
+        }
+    .button:hover {
+        opacity: 1;
+        }
+    .top-bar {
+        display: flex;
+        position: relative;
+        font-family: 'Gill Sans';
+        justify-content: flex-start; 
+        justify-content: space-between;
+        padding: 10px; 
+        box-sizing: border-box; 
+        width: 60%;
+        left: 550px;
+        } */
+/* ENDS NAV */
 
 </style>
 </head>
-
-
 <body class="dynamic-bg" id="dynamic-bg">
-    <!-- NAVIGATION -->
-<a href="index.html" style=" position: absolute;top: 10px;left:10px; flex-direction: column; display: flex;">
-    <img src="asset/temp.png" style="height: 35px; width: 45px;  " alt="Back" />
-    <Text style=" color: #000; text-decoration:none; opacity: 0.6;">Home</Text>
-  </a>
-  <div class="top-bar">
-    <a href="about.html"> <button class="button">About</button> </a>
-    <a href="PROJECTS.html"> <button class="button">Projects</button></a>
-    <a href="Experience.html"> <button class="button">Experience</button></a>
-    <a href="Education.html"><button class="button">Education</button></a>
-  </div>
-  <br/> 
-  <!-- NAVIGATION -->
-    
-    <h1 id="headerText" style="color: #c6cec5; position: relative; font-size: 70px; text-align: center;left: -350px; margin-top: 60px; opacity: 0.9; font-weight: bolder;"> Byte by Byte<span id="dot1" style="visibility: hidden;">.</span><span id="dot2" style="visibility: hidden;">.</span><span id="dot3" style="visibility: hidden;">.</span><span id="dot4" style="visibility: hidden;">.</span></h1>
-    <blockquote style="color: #625e6d; font-size: 22px;text-align: center; position: relative; left: -170px; top: -25px;">  <p>    </p> The world of tech is ever-evolving, consistently embracing exciting changes and advancements  </blockquote>
+    <!-- NAV -->
+    <div class="nav-bar">
+         <div class="top-bar">
+            <a href="index.html" style=" position: relative;right:545px; top: 5px; opacity: 0.6;"><img src="../asset/homeButton.png" style="height: 45px; width: 45px; border-radius: 50%; " alt="Back" /></a>
+            <a href="about.html" class="button"> My Story </a> 
+            <a href="Projects.html" class="button">Projects</a>
+            <a href="Experience.html" class="button">Experience</a>
+            <a href="Education.html" class="button">Education</a>
+        </div>
+    </div>
+     <!-- NAV -->
+
+     <h1 id="headerText" style="color: #c6cec5; font-size: 65px; text-align: start; margin: 10px; opacity: 100; font-weight: bolder;left: 55px; position: relative;"> Byte by Byte<span id="dot1" style="visibility: hidden;">.</span><span id="dot2" style="visibility: hidden;">.</span><span id="dot3" style="visibility: hidden;">.</span><span id="dot4" style="visibility: hidden;">.</span></h1>
+    <blockquote style="color: #625e6d; font-size: 28px;text-align: center; font-family: 'Times New Roman', Times, serif; position: relative; right: 350px;">  Journey Through The World of Tech</blockquote>
+        
     <div class="dynamic-bg" id="dynamic-bg">
         <!-- Your timeline content here -->
 
@@ -137,16 +151,16 @@ a {
                 <div class="timeline-content">
                     <h3>Data Science Fellow | CUNY Tech Prep</h3>
 
-                    <div style="font-size: 18px;">
-                        <ul>
-                            <li>Participated in a selective fellowship program focused on developing technical skills in data science, including coursework in statistical analysis, machine learning, and data visualization.</li>
-                            <li>Collaborated in a capstone project displaying proficiency in data analysis and visualization using Python.</li>
-                            <li>Conducted in-depth research and analysis of various datasets to derive meaningful insights and patterns.</li>
-                            <li>Utilized Python libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.</li>
-                            <li>Presented findings and recommendations to a panel of industry experts and stakeholders.</li>
-                            <li>Worked in a team environment, engaging in regular code reviews and collaborative problem-solving.</li>
-                        </ul>
-                    </div>
+                    <p>
+                        
+                            Participated in a selective fellowship program focused on developing technical skills in data science, including coursework in statistical analysis, machine learning, and data visualization.</li>
+                            Collaborated in a capstone project displaying proficiency in data analysis and visualization using Python.
+                            Conducted in-depth research and analysis of various datasets to derive meaningful insights and patterns.
+                            Utilized Python libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.
+                            Presented findings and recommendations to a panel of industry experts and stakeholders.
+                            Worked in a team environment, engaging in regular code reviews and collaborative problem-solving.
+                        
+                    </p>
                     
                 </div>
             </div>
@@ -199,6 +213,7 @@ a {
 
         </div>
     </div>
+
 
     <script>
         var colors = ['#dddddd', '#F2F2F2', '#CCCCCC', '#9f9f9f']; // Add your desired colors here

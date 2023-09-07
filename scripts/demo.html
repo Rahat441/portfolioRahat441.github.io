@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-container {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-container:hover {
+      transform: scale(1.1);
+    }
+
+    .project-image {
+      max-width: 100px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .project-summary {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .key-features {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .project-title:hover + .key-features {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-container">
+    <img class="project-image" src="project1.jpg" alt="Project 1">
+    <h2 class="project-title">Project 1</h2>
+    <p class="project-summary">This is a small summary of Project 1.</p>
+    <div class="key-features">
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project-container">
+    <img class="project-image" src="project2.jpg" alt="Project 2">
+    <h2 class="project-title">Project 2</h2>
+    <p class="project-summary">This is a small summary of Project 2.</p>
+    <div class="key-features">
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Add more project containers as needed -->
+
+</body>
+</html>

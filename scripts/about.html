@@ -1,78 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" class="text/css" href="style.css">
-
-    <style>
-        /* Your existing custom styles here */
-
-      
-
-        /* Add responsive styles */
-        @media (max-width: 768px) {
-            .top-bar {
-                width: 100%;
-                left: 0;
-                justify-content: center;
-                top: 50px; /* Adjust as needed */
-            }
-            .event-content {
-                padding: 10px;
-            }
-            .event-title {
-                font-size: 24px;
-                padding: 20px;
-            }
-            .event-description {
-                font-size: 16px;
-            }
-        }
-        
-        .body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            align-self: stretch;
-        }
-
+    <link rel="stylesheet" href="./style.css">
+    
+<style>
+    body {
+        height: 100%; width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman';}
+/* Responsive styles */
+    @media (max-width: 600px) {
         .top-bar {
-            font-family: 'Gill Sans';
-            flex-direction: row;
-            display: flex;
-            position: absolute;
-            height: 75;
-            width: 50%;
-            left: 650px;
-            top: 15px;
+            justify-content: center; /* Center align buttons for smaller screens */
         }
-
         .button {
-            border: transparent;
-            background-color: transparent;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            text-decoration: underline;
-            display: inline-block;
-            font-size: 22px;
-            margin: 4px 2px;
-            cursor: pointer;
-            height: 50px;
-            width: 200px;
-            border-radius: 12px;
-            opacity: 0.6;
+            font-size: 18px; /* Adjust font size for smaller screens */
+            padding: 8px 10px; /* Adjust padding for smaller buttons */
         }
-
-        .timeline-event {
+    }
+    .timeline-event {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width:100%; /* Set a maximum width for the timeline events */
+            margin: 0 auto;
         }
 
         .timeline-event:nth-child(even) {
@@ -85,62 +40,75 @@
             padding: 20px;
         }
 
-        .event-title {
-            font-size: 34px;
+        .event-title { 
+            font-size: 38px;
             font-weight: bold;
             margin: 20px;
             padding: 45px;
         }
 
         .event-description {
-            font-size: 18px;
+            
+            font-size: 20px;
             margin-bottom: 0;
+            
         }
         .event:hover {
-            cursor: pointer;
+            cursor:pointer;
             }
 
        .transition-cursor {
-            transition: cursor 0.000001ms linear;
+            transition: cursor 0.0001ms linear;
             }
-    </style>
-    
+
+            /* NAV BAR  */
+        .nav-bar {
+            overflow: visible; /* Clear floating content within the navigation bar */
+        }
+        .button {
+            display: block;
+            color: rgba(0, 0, 0, 0.736);
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px; /* Larger font size */
+            cursor: pointer;
+            padding: 14px 20px; /* Increased padding for more space */
+            border-radius: 12px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            margin: 0 10px; /* Increased spacing between buttons */
+            }
+        .button:hover {
+            opacity: 1;
+            }
+        .top-bar {
+            display: flex;
+            position: relative;
+            font-family: 'Gill Sans';
+            justify-content: flex-start; /* Align buttons to the right */
+            justify-content: space-between;
+            padding: 10px; /* Add padding for spacing */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+            width: 60%;
+            left: 550px;
+            }
+            /* NAV Ends */
+</style>
 </head>
 <body>
-    <!-- Navigation BAR -->
-    <!-- NAVIGATION -->
-    <!-- Add Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="asset/temp.png" height="35" width="45" alt="Back" />
-            <span class="ml-2 opacity-60">Home</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="PROJECTS.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Education.html">Education</a>
-                </li>
-            </ul>
+    <!-- NAV -->
+    <div class="nav-bar">
+         <div class="top-bar">
+            <a href="index.html" style=" position: relative;right:545px; top: 5px; opacity: 0.6;"><img src="../asset/homeButton.png" style="height: 45px; width: 45px; border-radius: 50%; " alt="Back" /></a>
+            <a href="about.html" class="button"> My Story </a> 
+            <a href="Projects.html" class="button">Projects</a>
+            <a href="Experience.html" class="button">Experience</a>
+            <a href="Education.html" class="button">Education</a>
         </div>
-    </nav>
-    <!-- NAVIGATION -->
+    </div>
+     <!-- NAV -->
 
-    <div class="timeline">
-        
-        
+     <div class="timeline">
         <div class="timeline-event" onmouseover="changeCursor(1)" onmouseout="resetCursor()">
             <div class="event-content">
                 <h2 class="event-title">From Bangladesh to the US </h2>
@@ -169,7 +137,12 @@
                     
                     Music is another love that fills my life with creativity and expression. As a musician, I enjoy the process of creating melodies that resonate with the soul and convey emotions that words often fail to express.
                     </p>
+                    <br/>
+
+                    <a style="font-style: italic;" href="https://www.youtube.com/watch?v=7UZa1fThaJY">First Fingerstyle Composition.</a>
             </div>
+           
+
         </div>
         <div class="timeline-event" onmouseover="changeCursor(4)" onmouseout="resetCursor()">
             <div class="event-content">
@@ -189,7 +162,7 @@
                     </p>
             </div>
         </div>
-        <div class="timeline-event" onmouseover="changeCursor(0)" onmouseout="resetCursor()">
+        <div class="timeline-event" onmouseover="changeCursor(5)" onmouseout="resetCursor()">
             <div class="event-content">
                 <h2 class="event-title">A Journey of Growth and Exploration
                 </h2>
@@ -202,28 +175,22 @@
             </div>
         </div>
     </div>
-
-    <!-- JavaScript Bundle with Popper for Bootstrap (Add this at the end of your body) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-oC2D70FhOB7oCt1wqKh9EwAXLUlOa1/t27Vw0FFKOEzK9Gq5tLLx9ViVswewxNmY"
-        crossorigin="anonymous"></script>
-    <script>
-         document.addEventListener("DOMContentLoaded", function () {
-        const timelineEvents = document.querySelectorAll(".timeline-event");
-
-        timelineEvents.forEach((event, index) => {
-            event.addEventListener("mouseenter", () => {
-                document.body.classList.add("transition-cursor");
-                document.body.style.cursor = `url("cursor${index + 1}.png"), auto`;
-            });
-
-            event.addEventListener("mouseleave", () => {
-                document.body.classList.remove("transition-cursor");
-                document.body.style.cursor = "auto";
-            });
-        });
-    });
     
+
+    <script>
+         function changeCursor(index) {
+            document.body.classList.add('transition-cursor');
+            document.body.style.cursor = 'url("../cursor/cursor' + index + '.png"), auto';
+            console.log('Hovering over:', index);
+        }
+
+        function resetCursor() {
+            document.body.classList.remove('transition-cursor');
+            document.body.style.cursor = 'auto';
+        }
+       
     </script>
-    </body>
+</body>
 </html>
+
+

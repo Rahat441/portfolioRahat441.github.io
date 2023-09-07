@@ -1,0 +1,121 @@
+/* ALL PAGES  */
+
+/* Navigation Bar */
+.nav-bar {
+   overflow: visible; /* Clear floating content within the navigation bar */
+}
+
+.button {
+    
+    float: left;
+    display: block;
+    color: rgba(0, 0, 0, 0.736);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 12px;
+    opacity: 0.6;
+    padding: 14px 16px;
+    margin: 5px; /* Add margin for spacing between buttons */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: auto; /* Allow the button width to be determined by its content */
+}
+
+/* Top Bar */
+.top-bar {
+    position: relative;
+    font-family: 'Gill Sans';
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the right */
+    justify-content: space-between;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 60%;
+    left: 550px;
+}
+/* Navigation Bar */
+
+
+/* index */
+/* Body Text */
+.body-text {
+    position: relative;
+    top: 150px;
+    right: -840px;
+    height: 50%;
+    width: 50%;
+    opacity: 0.8;
+    font-size: 98px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.linkedin-icon {
+    height: 60px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: opacity 1s;
+    opacity: 0.7; 
+    transition: transform 1s;
+}
+
+.facebook-icon {
+    height: 60px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: opacity 1s;
+    opacity: 0.7; 
+    transition: transform 1s; 
+}
+
+.instagram-icon {
+    height: 70px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: opacity 1s;
+    opacity: 0.7; 
+    transition: transform 1s; 
+}
+
+.github-icon {
+    height: 70px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50%;
+   
+    transition: opacity 1s;
+    opacity: 0.7; 
+    transition: transform 1s;
+
+    
+}
+
+/* Hover effect */
+.linkedin-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.github-icon:hover {
+    transform: scale(1.5);
+    opacity: .9;
+   
+}
+/* index */
+
+
+
+ /* Responsive styles 
+@media (max-width: 600px) {
+    .top-bar {
+        justify-content: center; 
+    }
+    .button {
+        font-size: 18px; 
+        padding: 8px 10px; 
+    }
+ }  */

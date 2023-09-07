@@ -1,0 +1,338 @@
+<!-- PROJECTS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .top-bar {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button {
+        font-size: 18px;
+        padding: 8px 10px;
+        margin: 5px 0;
+      }
+    }
+
+    /* For dynamic color change */
+    .project-container {position: relative;
+      top:50px; left: 50px;
+      display: flex;
+      align-items: center;
+      margin: 30px;
+      transition: transform 0.3s, width 0.3s, background-color 0.3s;
+      padding: 15px;
+      max-width: 800px;
+    }
+
+    .project-image {
+      position: relative;
+      left: 50px;
+      padding: 5px;
+      width: 250px; height: 200px;
+      max-width: 200px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-details {
+      flex-grow: 1;
+      position: relative;
+      left: 50px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+    }
+
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+      font-style: italic;
+      /* text-decoration:underline; */
+      opacity: .5;
+    }
+
+    /* Hidden expanded information */
+    .expanded-info {
+      position: relative;
+      left: 200px;
+      display: none;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+      margin: 5px;
+    }
+
+    /* Hover effect */
+    .project-container:hover {
+      transform: scale(1.2); /* Zoom in */
+      width: 60%; /* Take up 60% of the page width */
+      /* background-color: #f0f0f0; Adjust the background color as needed */
+    }
+
+    .project-container:hover .expanded-info {
+      display: block;
+    }
+    .project-container:hover .project-image {
+            display: none; /* Hide the image on hover */
+        }
+
+    /* NAV BAR STYLES */
+    .nav-bar {
+      overflow: visible;
+    }
+
+    .button {
+      display: block;
+      color: rgba(0, 0, 0, 0.736);
+      text-align: center;
+      text-decoration: none;
+      font-size: 22px;
+      cursor: pointer;
+      padding: 14px 20px;
+      border-radius: 12px;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      margin: 0 10px;
+    }
+
+    .button:hover {
+      opacity: 1;
+    }
+
+    .top-bar {
+      display: flex;
+      position: relative;
+      font-family: 'Gill Sans';
+      justify-content: flex-start;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 60%;
+      left: 550px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <div class="nav-bar">
+    <div class="top-bar">
+      <a href="index.html" style="position: relative; right: 545px; top: 5px; opacity: 0.6;">
+        <img src="../asset/homeButton.png" style="height: 45px; width: 45px; border-radius: 50%;" alt="Back" />
+      </a>
+      <a href="about.html" class="button"> My Story </a>
+      <a href="Projects.html" class="button">Projects</a>
+      <a href="Experience.html" class="button">Experience</a>
+      <a href="Education.html" class="button">Education</a>
+    </div>
+  </div>
+  <!-- NAV -->
+
+  <h1 style="font-size: 32px; font-weight: bold; color: #9e9e9e; margin: 20px 0; position:relative; left: 950px; text-decoration: underline;">From Concept to Completion</h1>
+
+
+  <!-- Project Containers with Zoom-In Effect -->
+  <div class="project-container">
+    <img class="project-image" src="../asset/book.png" alt="Project 1">
+    <div class="project-details">
+      <h2 class="project-title">Book Buddy</h2>
+      <p class="project-description">  React Native, JavaScript, Dialogflow, Google Firestore, Ngrok and Figma.</p>
+
+      <!-- Hidden expanded information -->
+      <div class="expanded-info">
+        <p>
+          <p><strong>Project Overview:</strong></p>
+<ul>
+  <li>Took a leadership role in the complete development lifecycle of an app for book enthusiasts called Book Buddy. Utilized an advanced stack of technology including React Native, JavaScript, Dialogflow, Google Firestore, Ngrok, and Figma.</li>
+  <li>Orchestrated the seamless integration of Google Firestore, ensuring efficient storage of data starting from various information on users to records of books. We were able to set up robust user authentication mechanisms that facilitated smooth user experiences and data management.</li>
+  <li>Designed, implemented, and fine-tuned an intuitive AI chatbot using Dialogflow, enabling users to receive personalized book recommendations based on their prompts and previous books read. I designed a webhook that retrieved historical reading data of users to enhance the accuracy of suggestions.</li>
+  <li>Implemented the Google Books API to enrich the collection of books, enhancing the chatbot's variety of content and relevance for book recommendations.</li>
+  <li>Collaborated seamlessly within a dynamic team of four professionals, effectively managing tasks and responsibilities, and employing Agile methodologies to ensure efficient task prioritization and continuous progress.</li>
+  <li>Demonstrated exceptional problem-solving skills during the intricate integration of the chatbot and the Google Books API, addressing technical challenges promptly and maintaining a high standard of functionality.</li>
+  <li>Garnered positive feedback from users, contributing to a vibrant and engaged community of book lovers. The application's user-friendly interface, advanced chatbot capabilities, and diverse book database significantly enhanced user interaction and experience.</li>
+</ul>
+
+<p><strong>Key Highlights:</strong></p>
+<ul>
+  <li>The project showcased proficiency in full-stack development, adept utilization of APIs, strategic chatbot design, and exemplary teamwork in a collaborative and innovative environment.</li>
+</ul>
+</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more project containers with similar structure -->
+  <div class="project-container">
+    <img class="project-image" src="../asset/economic.png" alt="Project 2">
+    <div class="project-details">
+      <h2 class="project-title">Economic Dashboard </h2>
+     
+      <p class="project-description"> Python, Jupyter Notebook, Streamlit  </p>
+
+      <!-- Hidden expanded information -->
+      <div class="expanded-info">
+        <p>
+          <p><strong>Key Achievements and Contributions:</strong></p>
+          <ol>
+            <li><strong>Data-Driven Insights:</strong> Leveraging my expertise in data analysis, I curated and meticulously analyzed a diverse range of datasets related to personal income, real GDP, and population. This data served as the cornerstone for our dashboard, allowing us to generate invaluable insights into the economic repercussions of the pandemic.</li>
+            
+            <li><strong>Interactive Data Visualizations:</strong> As the driving force behind the project, I designed and implemented a series of powerful data visualizations, including choropleth maps, regression models, and line charts. These visuals effectively communicated complex economic trends, making it easier for users to grasp the intricate relationships between variables.</li>
+            
+            <li><strong>Holistic Impact Assessment:</strong> Our dashboard didn't merely present data; it provided a holistic assessment of the pandemic's impact on the economy. By combining various datasets, I crafted compelling narratives that underscored the interconnectedness of personal income, real GDP, and population dynamics, painting a comprehensive picture for our users.</li>
+            
+            <li><strong>Enhanced Predictive Models:</strong> To ensure the highest data quality and prediction accuracy, I integrated and harmonized multiple datasets. This step was pivotal in improving the precision of our regression models, empowering our users with more reliable forecasting tools.</li>
+            
+            <li><strong>User-Centric Design:</strong> Recognizing the importance of user experience, I prioritized a user-centric design approach. The interface was intuitive and user-friendly, enabling individuals with varying levels of expertise to explore and understand the economic data effortlessly.</li>
+            
+            <li><strong>Collaborative Excellence:</strong> Throughout the project's lifecycle, I collaborated seamlessly with cross-functional teams, including data scientists, developers, and designers. Our agile methodology facilitated efficient task prioritization and continuous progress, ensuring that our project was always aligned with its objectives.</li>
+            
+            <li><strong>Communication and Documentation:</strong> Effective communication and documentation were integral to the project's success. I maintained detailed records of data sources, methodologies, and model performance, ensuring transparency and accountability.</li>
+          </ol>
+          
+          <p><strong>Impact and Outcomes:</strong></p>
+          <p>
+            Our Economic Dashboard received widespread acclaim and engagement from its users, ranging from economists and policymakers to students and the general public. Its user-friendly interface, coupled with the depth of economic insights, created a valuable resource for understanding the dynamic economic landscape during the pandemic.
+          </p>
+          
+          <p>
+            This project exemplified my proficiency in full-stack development, data analysis, and data visualization, as well as my ability to communicate complex insights in a clear and accessible manner. I'm proud to have contributed to a project that not only advanced my technical skills but also provided a valuable resource for understanding the economic implications of a global crisis.
+          </p>
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-container">
+    <img class="project-image" src="../asset/hospital.png" alt="Project 3">
+    <div class="project-details">
+      <h2 class="project-title">Emergency Hospital Service </h2>
+      <p class="project-description">Python, Streamlit, MySQL</p>
+
+      <!-- Hidden expanded information -->
+      <div class="expanded-info">
+        <p>
+          <p><strong>Project Overview:</strong></p>
+<ul>
+  <li>Built a full-stack web application using Python with Streamlit to address critical challenges in the healthcare industry.</li>
+  <li>Created a new database for hospitals in New York City (NYC), encompassing essential data related to treatment specialization, availability, and more.</li>
+  <li>Normalized the dataset and developed ER Diagrams, ensuring efficient data structure and relationships.</li>
+  <li>Wrote SQL queries to enable seamless data retrieval and management within the healthcare database.</li>
+</ul>
+
+<p><strong>Key Contributions and Achievements:</strong></p>
+<ul>
+  <li>Developed a comprehensive system that significantly enhances the healthcare infrastructure in NYC.</li>
+  <li>Facilitated more efficient distribution of patients across nearby hospitals and medical facilities by utilizing real-time data on treatment specialization and capacity.</li>
+  <li>Successfully addressed the issue of overcrowding at medical facilities, stemming from inefficient patient delivery processes.</li>
+</ul>
+
+<p><strong>Impact and Outcomes:</strong></p>
+<ul>
+  <li>The project's implementation led to a marked improvement in the allocation of patients to hospitals with available resources and expertise.</li>
+  <li>By optimizing patient distribution, the healthcare system can now better cope with patient influx and emergencies, ultimately saving lives.</li>
+</ul>
+
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!-- CONTENT 
+
+
+  KEY:
+  Took a leadership role in the complete development lifecycle of an app for book enthusiasts called Book Buddy. 
+Utilized an advanced stack of technology including React Native, JavaScript, Dialogflow, Google Firestore, Ngrok and Figma.<br/>
+
+    Orchestrated the seamless integration of Google Firestore, ensuring efficient storage of data starting from various 
+    information on users to records of books. We were able to set up a robust user authentication mechanisms that facilitated smooth user experiences and data management.<br/>
+
+    Designed, implemented, and fine-tuned an intuitive AI chatbot using Dialogflow, enabling users to receive personalized book recommendations based on their prompts and previous books read.
+     I designed a webhook that retrieved historical reading data of users to enhance the accuracy of suggestions.<br/>
+
+Implemented the Google Books API to enrich the collection of books, enhancing the chatbots variety of content and relevance for the book recommendations.
+Collaborated seamlessly within a dynamic team of four professionals, effectively managing tasks and responsibilities, and employing Agile methodologies to ensure efficient task prioritization and continuous progress.<br/>
+Demonstrated exceptional problem-solving skills during the intricate integration of the chatbot and the Google Books API, addressing technical challenges promptly and maintaining a high standard of functionality.<br/>
+Garnered positive feedback from users, contributing to a vibrant and engaged community of book lovers. The application's user-friendly interface, advanced chatbot capabilities, and diverse book database significantly enhanced user interaction and experience.<br/>
+The project showcased proficiency in full-stack development, adept utilization of APIs, strategic chatbot design, and exemplary teamwork in a collaborative and innovative environment.
+            
+
+    
+Challenges and Solutions:
+Overcame technical challenges during the integration of the Dialogflow chatbot and Google Books API. Worked collaboratively with team members to refine the webhook mechanism, ensuring accurate data retrieval and relevant recommendations. Employed debugging techniques and effective communication to address issues promptly.
+
+Team Collaboration:
+Coordinated tasks and responsibilities with a team of four, leveraging tools like version control and project management platforms to facilitate seamless collaboration. Utilized Agile methodologies to prioritize tasks, ensure transparency, and streamline development efforts.
+
+Outcome:
+The Book Enthusiast App garnered positive feedback from users, contributing to an engaged community of book lovers. The integration of a user-friendly interface, advanced chatbot capabilities, and a diverse book database enhanced the user experience, resulting in increased usage and interaction rates.
+
+Skills Demonstrated:
+
+Full-stack development using React Native and JavaScript.
+Integration of external APIs, including the Google Books API.
+Design and implementation of a sophisticated chatbot using Dialogflow.
+Problem-solving and debugging skills in a collaborative environment.
+Effective communication and teamwork within a diverse group of professionals.
+@@@
+
+
+
+22
+
+| Full-Stack Data Visualization Web Application
+
+
+Technologies Used: Python, Jupyter Notebook, Streamlit
+
+Project Overview:
+
+During the period from July 2022 to December 2022, I spearheaded the development of a comprehensive full-stack web application using cutting-edge technologies, including Python with Jupyter Notebook and Streamlit. This project aimed to create an interactive and informative Economic Dashboard that shed light on the profound impact of the COVID-19 pandemic on critical economic indicators in the United States of America.
+
+Key Achievements and Contributions:
+
+Data-Driven Insights: Leveraging my expertise in data analysis, I curated and meticulously analyzed a diverse range of datasets related to personal income, real GDP, and population. This data served as the cornerstone for our dashboard, allowing us to generate invaluable insights into the economic repercussions of the pandemic.
+Interactive Data Visualizations: As the driving force behind the project, I designed and implemented a series of powerful data visualizations, including choropleth maps, regression models, and line charts. These visuals effectively communicated complex economic trends, making it easier for users to grasp the intricate relationships between variables.
+Holistic Impact Assessment: Our dashboard didn't merely present data; it provided a holistic assessment of the pandemic's impact on the economy. By combining various datasets, I crafted compelling narratives that underscored the interconnectedness of personal income, real GDP, and population dynamics, painting a comprehensive picture for our users.
+Enhanced Predictive Models: To ensure the highest data quality and prediction accuracy, I integrated and harmonized multiple datasets. This step was pivotal in improving the precision of our regression models, empowering our users with more reliable forecasting tools.
+User-Centric Design: Recognizing the importance of user experience, I prioritized a user-centric design approach. The interface was intuitive and user-friendly, enabling individuals with varying levels of expertise to explore and understand the economic data effortlessly.
+Collaborative Excellence: Throughout the project's lifecycle, I collaborated seamlessly with cross-functional teams, including data scientists, developers, and designers. Our agile methodology facilitated efficient task prioritization and continuous progress, ensuring that our project was always aligned with its objectives.
+Communication and Documentation: Effective communication and documentation were integral to the project's success. I maintained detailed records of data sources, methodologies, and model performance, ensuring transparency and accountability.
+Impact and Outcomes:
+
+Our Economic Dashboard received widespread acclaim and engagement from its users, ranging from economists and policymakers to students and the general public. Its user-friendly interface, coupled with the depth of economic insights, created a valuable resource for understanding the dynamic economic landscape during the pandemic.
+
+This project exemplified my proficiency in full-stack development, data analysis, and data visualization, as well as my ability to communicate complex insights in a clear and accessible manner. I'm proud to have contributed to a project that not only advanced my technical skills but also provided a valuable resource for understanding the economic implications of a global crisis.
+
+
+  -->
+

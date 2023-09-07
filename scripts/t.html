@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Background color for the whole page */
+    color: white; /* Text color for the whole page */
+  }
+
+  .timeline-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #333; /* Timeline background color */
+    z-index: 1;
+  }
+
+  .timeline-bar {
+    width: 2px;
+    height: 100%;
+    background-color: #444; /* Timeline bar color */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-date {
+    position: absolute;
+    width: 100px; /* Adjust date marker width */
+    background-color: #444; /* Date marker background color */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+  }
+
+  /* Dummy Containers */
+  .dummy-container {
+    width: 200px; /* Adjust container width */
+    height: 150px; /* Adjust container height */
+    background-color: #444; /* Container background color */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+  }
+
+  /* Hover Effect */
+  .timeline-container:hover .timeline-date,
+  .timeline-container:hover .dummy-container {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <!-- Timeline Container -->
+  <div class="timeline-container">
+    <div class="timeline-bar"></div>
+    <div class="timeline-date" style="top: 100px; left: 10px;">Date 1</div>
+    <div class="timeline-date" style="top: 300px; left: 10px;">Date 2</div>
+    <div class="timeline-date" style="top: 500px; left: 10px;">Date 3</div>
+  </div>
+
+  <!-- Dummy Containers -->
+  <div class="dummy-container" style="top: 100px;">Container 1</div>
+  <div class="dummy-container" style="top: 300px;">Container 2</div>
+  <div class="dummy-container" style="top: 500px;">Container 3</div>
+
+  <!-- Your content goes here -->
+</body>
+</html>

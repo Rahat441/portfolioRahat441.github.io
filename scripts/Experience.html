@@ -33,7 +33,7 @@ body {
             
             align-items: center;
             justify-content: center;
-            color: #687278;
+            color: #ffffff;
             
             transition: background-color 0.3s ease;
         }
@@ -48,7 +48,7 @@ body {
 
 /* Timeline card styling with black text */
 .timeline-card {
-    background-color: #c6cec5;
+    background-color: #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -89,7 +89,38 @@ a {
   text-decoration: none;
   color: #007BFF;
 }
-
+ /* NAV BAR  */
+        .nav-bar {
+            overflow: visible; /* Clear floating content within the navigation bar */
+        }
+        .button {
+            display: block;
+            color: rgba(0, 0, 0, 0.736);
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px; /* Larger font size */
+            cursor: pointer;
+            padding: 14px 20px; /* Increased padding for more space */
+            border-radius: 12px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            margin: 0 10px; /* Increased spacing between buttons */
+            }
+        .button:hover {
+            opacity: 1;
+            }
+        .top-bar {
+            display: flex;
+            position: relative;
+            font-family: 'Gill Sans';
+            justify-content: flex-start; /* Align buttons to the right */
+            justify-content: space-between;
+            padding: 10px; /* Add padding for spacing */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+            width: 60%;
+            left: 550px;
+            }
+            /* NAV Ends */
 </style>
 </head>
 <body class="dynamic-bg" id="dynamic-bg">
@@ -144,9 +175,7 @@ a {
                         I look forward to applying the knowledge and skills I have gained through this fellowship to make a meaningful impact in the world of data science. I am excited about the opportunities that lie ahead and how I can bring my expertise to projects that require analytical thinking and data-driven solutions.
                     </p>
                     
-                    <p>
-                        Thank you for considering my application, and I am eager to discuss how my experience as a Data Science Fellow aligns with your organization's objectives and values.
-                    </p>
+                    
                     
                     
                 </div>
@@ -178,9 +207,7 @@ a {
                     <p style="font-size: 16px;">
                         My internship with the Research Foundation of CUNY, Crown Doctors, and Digital Factory Inc provided me with a comprehensive learning experience. It allowed me to acquire technical skills in mobile app development and leadership skills in project management. Moreover, the opportunity to work on a project with a significant social impact was personally fulfilling and reinforced my dedication to using technology to address real-world issues.
                     </p>
-                    <p style="font-size: 16px;">
-                        I look forward to bringing these skills, experiences, and my unwavering commitment to making a difference to your organization. Thank you for considering my application, and I'm excited to discuss how my internship experience aligns with the goals and values of your company.
-                    </p>
+                    
                     
                 </div>
             </div>
@@ -248,9 +275,7 @@ a {
                         My experience as an instructor in the NASA MAA Program was not only professionally fulfilling but also personally rewarding. It allowed me to foster the next generation of programmers and share my passion for programming and education.
                     </p>
                     
-                    <p>
-                        I look forward to leveraging the skills and insights I gained during my time as an instructor to continue making a positive impact in the realm of education and technology. Thank you for considering my application, and I am eager to discuss how my teaching experience aligns with your organization's goals and values.
-                    </p>
+                    
                     
                 </div>
             </div>
@@ -265,14 +290,14 @@ a {
         var colors = ['#dddddd', '#F2F2F2', '#CCCCCC', '#9f9f9f']; // Add your desired colors here
         var currentColorIndex = 0;
 
-        function changeBackgroundColor() {
-            var bgElement = document.getElementById('dynamic-bg');
-            bgElement.style.backgroundColor = colors[currentColorIndex];
-            currentColorIndex = (currentColorIndex + 1) % colors.length;
-        }
+        // function changeBackgroundColor() {
+        //     var bgElement = document.getElementById('dynamic-bg');
+        //     bgElement.style.backgroundColor = colors[currentColorIndex];
+        //     currentColorIndex = (currentColorIndex + 1) % colors.length;
+        // }
 
-        // Change background color every 2 seconds
-        setInterval(changeBackgroundColor, 2000);
+        // // Change background color every 2 seconds
+        // setInterval(changeBackgroundColor, 2000);
 
        
         function showAndHideDotsLoop() {

@@ -104,6 +104,10 @@
     .main-wrapper {
         align-self: center;
         justify-content: center;
+        display: flex; /* Use flexbox to align divs vertically */
+    flex-direction: column; /* Stack divs vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;
     }
         /* Media Queries for Responsive Design */
         @media screen and (max-width: 768px) {
@@ -121,7 +125,8 @@
             .main-wrapper{
             flex-direction: column; /* Stack elements vertically for small screens */
             width: 80%;
-            /* padding: 5px; */
+            display: flex;
+            padding: 5px;
             max-width: 100%;
             justify-content: center;
             }
@@ -135,11 +140,11 @@
             
             }
             .project-description{
-                font-size: 8px;
+                font-size: 10px;
             }
             .project-title {
             margin-top: 10px;
-            font-size: 8px;
+            font-size: 10px;
             }
 
             .project-image {
@@ -150,7 +155,7 @@
 
             .expanded-info {
             justify-content: flex-start;
-            font-size: 8px;
+            font-size: 10px;
             
             }
 
@@ -179,26 +184,26 @@
         <img class="project-image" src="../asset/book.png" alt="Project 1">
         <div class="project-details">
           <h2 class="project-title">Book Buddy</h2>
-          <p class="project-description">  React Native, JavaScript, Dialogflow, Google Firestore, Ngrok and Figma.</p>
+          <p class="project-description">  React Native, JavaScript, Dialogflow, <br/>Google Firestore, Ngrok and Figma.</p>
     
           <!-- Hidden expanded information -->
-          <div class="expanded-info">
-            <p>
+      <div class="expanded-info">
+      <p>
               <p><strong>Project Overview:</strong></p>
     <ul>
       <li>Took a leadership role in the complete development lifecycle of an app for book enthusiasts called Book Buddy. Utilized an advanced stack of technology including React Native, JavaScript, Dialogflow, Google Firestore, Ngrok, and Figma.</li>
-      <li>Orchestrated the seamless integration of Google Firestore, ensuring efficient storage of data starting from various information on users to records of books. We were able to set up robust user authentication mechanisms that facilitated smooth user experiences and data management.</li>
-      <li>Designed, implemented, and fine-tuned an intuitive AI chatbot using Dialogflow, enabling users to receive personalized book recommendations based on their prompts and previous books read. I designed a webhook that retrieved historical reading data of users to enhance the accuracy of suggestions.</li>
+      <li>Designed, implemented, and fine-tuned an intuitive AI chatbot using Dialogflow, enabling users to receive personalized book recommendations based on their prompts and previous books read.</li>
       <li>Implemented the Google Books API to enrich the collection of books, enhancing the chatbot's variety of content and relevance for book recommendations.</li>
-      <li>Collaborated seamlessly within a dynamic team of four professionals, effectively managing tasks and responsibilities, and employing Agile methodologies to ensure efficient task prioritization and continuous progress.</li>
-      <li>Demonstrated exceptional problem-solving skills during the intricate integration of the chatbot and the Google Books API, addressing technical challenges promptly and maintaining a high standard of functionality.</li>
-      <li>Garnered positive feedback from users, contributing to a vibrant and engaged community of book lovers. The application's user-friendly interface, advanced chatbot capabilities, and diverse book database significantly enhanced user interaction and experience.</li>
+      <li>Collaborated seamlessly within a dynamic team of four, employing Agile methodologies to ensure efficient task prioritization and continuous progress.</li>
     </ul>
     
     <p><strong>Key Highlights:</strong></p>
-    <ul>
-      <li>The project showcased proficiency in full-stack development, adept utilization of APIs, strategic chatbot design, and exemplary teamwork in a collaborative and innovative environment.</li>
-    </ul>
+      The project showcased proficiency in full-stack development, adept utilization of APIs, strategic chatbot design, and exemplary teamwork in a collaborative and innovative environment.</li>
+      
+    <p><strong>Documentation:</strong> <br/>
+      <a href="https://github.com/Rahat441"> GitHub Repo </a><br/>
+      <a href="https://youtu.be/lXgyHFLAaZM"> Demo Video Link </a>
+    </p>
     </p>
           </div>
         </div>
@@ -210,7 +215,7 @@
         <div class="project-details">
           <h2 class="project-title">Economic Dashboard </h2>
          
-          <p class="project-description"> Python, Jupyter Notebook, Streamlit  </p>
+          <p class="project-description"> Python, Jupyter Notebook, Streamlit  </p> 
     
           <!-- Hidden expanded information -->
           <div class="expanded-info">
@@ -221,27 +226,22 @@
                 
                 <li><strong>Interactive Data Visualizations:</strong> As the driving force behind the project, I designed and implemented a series of powerful data visualizations, including choropleth maps, regression models, and line charts. These visuals effectively communicated complex economic trends, making it easier for users to grasp the intricate relationships between variables.</li>
                 
-                <li><strong>Holistic Impact Assessment:</strong> Our dashboard didn't merely present data; it provided a holistic assessment of the pandemic's impact on the economy. By combining various datasets, I crafted compelling narratives that underscored the interconnectedness of personal income, real GDP, and population dynamics, painting a comprehensive picture for our users.</li>
+                <li><strong>Holistic Impact Assessment:</strong>  By combining various datasets, I crafted compelling narratives that underscored the interconnectedness of personal income, real GDP, and population dynamics, painting a comprehensive picture for our users. Also Improved the precision of our regression models, empowering our users with more reliable forecasting tools.</li>
+                 
                 
-                <li><strong>Enhanced Predictive Models:</strong> To ensure the highest data quality and prediction accuracy, I integrated and harmonized multiple datasets. This step was pivotal in improving the precision of our regression models, empowering our users with more reliable forecasting tools.</li>
                 
-                <li><strong>User-Centric Design:</strong> Recognizing the importance of user experience, I prioritized a user-centric design approach. The interface was intuitive and user-friendly, enabling individuals with varying levels of expertise to explore and understand the economic data effortlessly.</li>
-                
-                <li><strong>Collaborative Excellence:</strong> Throughout the project's lifecycle, I collaborated seamlessly with cross-functional teams, including data scientists, developers, and designers. Our agile methodology facilitated efficient task prioritization and continuous progress, ensuring that our project was always aligned with its objectives.</li>
-                
+            
                 <li><strong>Communication and Documentation:</strong> Effective communication and documentation were integral to the project's success. I maintained detailed records of data sources, methodologies, and model performance, ensuring transparency and accountability.</li>
               </ol>
               
               <p><strong>Impact and Outcomes:</strong></p>
+            
               <p>
-                Our Economic Dashboard received widespread acclaim and engagement from its users, ranging from economists and policymakers to students and the general public. Its user-friendly interface, coupled with the depth of economic insights, created a valuable resource for understanding the dynamic economic landscape during the pandemic.
+                This project exemplified my proficiency in full-stack development, data analysis, and data visualization, as well as my ability to communicate complex insights in a clear and accessible manner. 
               </p>
               
-              <p>
-                This project exemplified my proficiency in full-stack development, data analysis, and data visualization, as well as my ability to communicate complex insights in a clear and accessible manner. I'm proud to have contributed to a project that not only advanced my technical skills but also provided a valuable resource for understanding the economic implications of a global crisis.
+              <p><strong>Documentation:</strong><br/><a href="https://github.com/Rahat441/Economic-Dashboard-United-States-">GitHub Repo</a>
               </p>
-              
-              
             </p>
           </div>
         </div>
@@ -250,7 +250,7 @@
       <div class="project-container">
         <img class="project-image" src="../asset/hospital.png" alt="Project 3">
         <div class="project-details">
-          <h2 class="project-title">Emergency Hospital Service </h2>
+          <h2 class="project-title">Emergency Service213 </h2>
           <p class="project-description">Python, Streamlit, MySQL</p>
     
           <!-- Hidden expanded information -->
@@ -271,12 +271,8 @@
       <li>Successfully addressed the issue of overcrowding at medical facilities, stemming from inefficient patient delivery processes.</li>
     </ul>
     
-    <p><strong>Impact and Outcomes:</strong></p>
-    <ul>
-      <li>The project's implementation led to a marked improvement in the allocation of patients to hospitals with available resources and expertise.</li>
-      <li>By optimizing patient distribution, the healthcare system can now better cope with patient influx and emergencies, ultimately saving lives.</li>
-    </ul>
-    
+    <p><strong>Documentation:</strong><br/><a href="https://github.com/Rahat441/Emergency_hospital">GitHub Repo</a>
+    </p>
     
     
             </p>
